@@ -1,9 +1,6 @@
-const a = 3;
-const b = 2;
-const c = 'fasjfwfjslf';
+const sum = (num1, num2) => num1 + num2;
+const sub = (num1, num2) => num1 - num2;
+const mult = (num1, num2) => num1 * num2;
+const div = (num1, num2) => num2 === 0 ? 'Impossível dividir por zero!' : num1 / num2;
 
-function sum() {
-  return a + b + c;
-}
-
-console.log(sum());
+export { sum, sub, mult, div };
