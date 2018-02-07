@@ -6,4 +6,4 @@ function sum() {
   return a + b + c;
 }
 
-console.log('teste d');
+console.log(sum());
