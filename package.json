@@ -8,9 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
-   "hooks": {
-     "pre-push": "npm lint"
-   }
+    "hooks": {
+      "pre-push": "npm lint"
+    }
   },
   "author": "Jeias Soares",
   "license": "MIT",
@@ -18,6 +18,6 @@
     "eslint": "^4.17.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "husky": "^0.14.3"
+    "husky": "^0.15.0-rc.6"
   }
 }
