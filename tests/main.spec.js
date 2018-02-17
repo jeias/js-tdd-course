@@ -1,34 +1,23 @@
 import { assert } from 'chai';
-import { sum, sub, mult, div } from '../src/main.js'
+import FizzBuzz from '../src/main';
 
-describe('Calc', () => {
+describe ('Main', () => {
 
-
-  describe('sum', () => {
-    it('should return 4 when `sum(2,2)`', () => {
-      assert.equal(4, sum(2, 2));
-    });
+  it('Should return `Fizz` when multiple of 3', () => {
+    assert.equal(FizzBuzz(3), 'Fizz');
+    assert.equal(FizzBuzz(6), 'Fizz');
   });
 
-  describe('sub', () => {
-    it('should return 2 when `sub(4,2)`', () => {
-      assert.equal(2, sub(4, 2));
-    });
+  it('Should return `Buzz` when multiple of 5', () => {
+    assert.equal(FizzBuzz(5), 'Buzz');
+    assert.equal(FizzBuzz(10), 'Buzz');
   });
 
-  describe('mult', () => {
-    it('sould return 4 when `mult(2,2)', () => {
-      assert.equal(4, mult(2, 2));
-    });
+  it('Should return `FizzBuzz` when multiple of 5 and 3', () => {
+    assert.equal(FizzBuzz(15), 'FizzBuzz');
   });
 
-  describe('div', () => {
-    it('should return 2 when `div(4,2)`', () => {
-      assert.equal(2, div(4, 2));
-    });
-
-    it('should return `Impossível dividir por zero!` when `div(2,0)`', () => {
-      assert.equal('Impossível dividir por zero!', div(2, 0));
-    });
+  it('Should return the number when non-multiple', () => {
+    assert.equal(FizzBuzz(17), 17);
   });
 });
