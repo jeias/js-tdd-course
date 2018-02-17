@@ -20,4 +20,8 @@ describe ('Main', () => {
   it('Should return the number when non-multiple', () => {
     assert.equal(FizzBuzz(17), 17);
   });
+
+  it('Should return 0 when 0', () => {
+    assert.equal(FizzBuzz(0), 0);
+  });
 });
